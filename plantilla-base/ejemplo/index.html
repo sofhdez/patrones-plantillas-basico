@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Mi Fan-Page · Selección Femenil 🇲🇽</title>
+
+  <!-- ===========================================================
+       MI FAN-PAGE  ·  VERSIÓN EJEMPLO (ya terminada)
+       Una página sobre algo que te gusta: un equipo, una artista,
+       una película, tu mascota... ¡lo que quieras!
+
+       Esta es la VERSIÓN DE EJEMPLO, ya completa, para ver cómo
+       se ve el resultado final. La versión "para-llenar" es la
+       que vas a construir tú.
+
+       En este ejemplo el tema es el DEPORTE FEMENIL: la Selección
+       Femenil de Fútbol de México. Puedes cambiarlo por tu equipo
+       o tu deportista favorita.
+       =========================================================== -->
+
+</head>
+
+<body>
+
+  <!-- ====================  MENÚ DE NAVEGACIÓN  ====================
+       <nav> es un menú. Cada enlace salta a una sección de la página
+       usando #  (el id de la sección a la que queremos ir). -->
+  <nav class="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#ficha">Ficha</a>
+    <a href="#top">Top 5</a>
+    <a href="#galeria">Galería</a>
+    <a href="#multimedia">Multimedia</a>
+    <a href="#comentarios">Comentarios</a>
+  </nav>
+
+
+  <!-- ====================  ENCABEZADO (HERO)  ==================== -->
+  <header class="hero" id="inicio">
+
+    <!-- Botón de modo oscuro (lo controla el script.js) -->
+    <button id="boton-tema" class="boton-tema">🌙</button>
+
+    <!-- Foto principal. Aquí usamos un emoji grande.
+         Más abajo te decimos cómo poner una foto de verdad. -->
+    <div class="foto-perfil">⚽</div>
+
+    <h1>Selección Femenil de México</h1>
+    <p class="subtitulo">El Tri Femenil · Fútbol</p>
+
+    <p class="descripcion">
+      La selección nacional de fútbol femenil de México. Un equipo
+      que inspira a miles de niñas a soñar en grande dentro de la
+      cancha. ⚽💚
+    </p>
+
+    <!-- Etiquetas con cosas que la describen -->
+    <div class="etiquetas">
+      <span class="etiqueta">⚽ Fútbol</span>
+      <span class="etiqueta">🇲🇽 México</span>
+      <span class="etiqueta">🏆 Concacaf</span>
+      <span class="etiqueta">💪 Garra</span>
+    </div>
+
+    <!-- Botón de "me gusta" con contador (lo controla el JS) -->
+    <button id="boton-like" class="boton-like">💚 Me gusta · <span id="likes">0</span></button>
+
+  </header>
+
+
+  <!-- ====================  SECCIÓN: FICHA TÉCNICA  ====================
+       Una <table> (tabla) sirve para mostrar datos en filas y columnas. -->
+  <section class="seccion" id="ficha">
+    <h2>📋 Ficha técnica</h2>
+
+    <table class="ficha">
+      <tr>
+        <th>Nombre completo</th>
+        <td>Selección Femenina de Fútbol de México</td>
+      </tr>
+      <tr>
+        <th>Apodo</th>
+        <td>El Tri Femenil</td>
+      </tr>
+      <tr>
+        <th>Confederación</th>
+        <td>Concacaf (Norte y Centroamérica)</td>
+      </tr>
+      <tr>
+        <th>Colores</th>
+        <td>Verde, blanco y rojo</td>
+      </tr>
+      <tr>
+        <th>Casa</th>
+        <td>Estadio Azteca, Ciudad de México</td>
+      </tr>
+    </table>
+  </section>
+
+
+  <!-- ====================  SECCIÓN: TOP 5  ====================
+       <ol> es una lista NUMERADA. Cada <li> es un elemento de la lista. -->
+  <section class="seccion" id="top">
+    <h2>🏆 Mi Top 5 de jugadoras</h2>
+
+    <ol class="top">
+      <li>Scarlett Camberos</li>
+      <li>Charlyn Corral</li>
+      <li>Nicki Hernández</li>
+      <li>Rebeca Bernal</li>
+      <li>Kim Rodríguez</li>
+    </ol>
+  </section>
+
+
+  <!-- ====================  SECCIÓN: GALERÍA  ====================
+       <figure> agrupa una imagen con su texto <figcaption>. -->
+  <section class="seccion" id="galeria">
+    <h2>📸 Galería</h2>
+
+    <div class="galeria">
+
+      <figure class="tarjeta">
+        <div class="imagen">
+          <img src="https://aiplay.mx/wp-content/uploads/2025/03/La-Seleccion-Mexicana-Femenil-avanza-en-el-ranking-FIFA.jpg" alt="Selección Femenil de México">
+        </div>
+        <figcaption class="pie">A la cancha</figcaption>
+      </figure>
+
+      <figure class="tarjeta">
+        <div class="imagen">
+          <img src="https://oem.com.mx/elsoldetlaxcala/img/22935975/1745427644/BASE_LANDSCAPE/1200/image.webp" alt="Jacky Ovalle celebrando">
+        </div>
+        <figcaption class="pie">¡Gooool!</figcaption>
+      </figure>
+
+      <figure class="tarjeta">
+        <div class="imagen">
+          <img src="https://www.tudn.com/_next/image?url=https%3A%2F%2Fst1.uvnimg.com%2F63%2F58%2F5219c140408ca4bf46503fd1a18d%2Ff1fcade9b9f7488f8c651680501e5ead&w=1280&q=75" alt="Selección Femenil rumbo al Mundial">
+        </div>
+        <figcaption class="pie">Por el título</figcaption>
+      </figure>
+
+      <figure class="tarjeta">
+        <div class="imagen">
+          <img src="https://www.sopitas.com/wp-content/uploads/2024/06/seleccion-mexicana-femenil-pedro-lopez-1.png" alt="Selección Femenil de México celebrando">
+        </div>
+        <figcaption class="pie">Rumbo al Mundial</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+
+  <!-- ====================  SECCIÓN: MULTIMEDIA (embed)  ====================
+       Un <iframe> es "una página dentro de otra": aquí lo usamos para
+       INCRUSTAR (embeber) una playlist de Spotify.
+
+       👉 Es GRATIS: Spotify te regala el código en "Compartir → Insertar". -->
+  <section class="seccion" id="multimedia">
+    <h2>🎧 Multimedia</h2>
+
+    <!-- ----------  PLAYLIST DE SPOTIFY  ----------
+         Este ya funciona como EJEMPLO (una playlist pública de Spotify).
+         CÓMO PONER LA TUYA:
+         1. Abre tu playlist o podcast en Spotify.
+         2. Clic en los "..." → "Compartir" → "Insertar elemento".
+         3. Copia la dirección que aparece después de  src="..."
+            (se ve así:  https://open.spotify.com/embed/playlist/XXXX )
+         4. Pégala abajo, reemplazando todo el enlace de src. -->
+    <h3 class="sub-multimedia">🎵 Una playlist</h3>
+    <iframe
+      class="spotify"
+      src="https://open.spotify.com/embed/playlist/37i9dQZF1DXcBWIGoYBM5M"
+      title="Playlist de Spotify"
+      loading="lazy"
+      allow="encrypted-media"></iframe>
+    <p class="nota-embed">
+      Una playlist de música motivadora. ⚽🎶
+    </p>
+  </section>
+
+
+  <!-- ====================  SECCIÓN: FRASE FAVORITA  ====================
+       <blockquote> es una cita: un texto destacado de alguien. -->
+  <section class="seccion">
+    <h2>💬 Su frase favorita</h2>
+
+    <blockquote class="frase">
+      "El fútbol también es de las niñas."
+      <cite>— El Tri Femenil</cite>
+    </blockquote>
+  </section>
+
+
+  <!-- ============  SECCIÓN: DATO CURIOSO (con JavaScript)  ============ -->
+  <section class="seccion">
+    <h2>✨ ¿Sabías que...?</h2>
+
+    <div class="caja-dato">
+      <p id="dato">Aprieta el botón para descubrir un dato curioso 👇</p>
+    </div>
+
+    <button id="boton-dato" class="boton-dato">Dame un dato 🎲</button>
+  </section>
+
+
+  <!-- ============  SECCIÓN: CAMBIA EL COLOR (con JavaScript)  ============
+       Cada botón cambia el color principal de toda la página. -->
+  <section class="seccion">
+    <h2>🎨 Cambia el color del tema</h2>
+
+    <div class="colores">
+      <button class="color-btn" style="background:#0E7C6B" data-color="#0E7C6B"></button>
+      <button class="color-btn" style="background:#E0568A" data-color="#E0568A"></button>
+      <button class="color-btn" style="background:#7048E8" data-color="#7048E8"></button>
+      <button class="color-btn" style="background:#1098AD" data-color="#1098AD"></button>
+      <button class="color-btn" style="background:#F76707" data-color="#F76707"></button>
+    </div>
+  </section>
+
+
+  <!-- ============  SECCIÓN: COMENTARIOS (con JavaScript)  ============
+       <form> es un formulario: junta campos para que la gente escriba.
+       <input> es una línea de texto y <textarea> un recuadro grande. -->
+  <section class="seccion" id="comentarios">
+    <h2>📝 Deja un comentario</h2>
+
+    <form id="form-comentario" class="form">
+      <input id="nombre" type="text" placeholder="Tu nombre" required>
+      <textarea id="mensaje" placeholder="Escribe tu comentario..." required></textarea>
+      <button type="submit" class="boton-dato">Publicar comentario 💬</button>
+    </form>
+
+    <!-- Aquí el JavaScript irá agregando los comentarios -->
+    <div id="lista-comentarios" class="lista-comentarios"></div>
+  </section>
+
+
+  <!-- ====================  SECCIÓN: PREGUNTAS  ====================
+       <details> se abre y se cierra al hacer clic. ¡Sin JavaScript!
+       El <summary> es la pregunta visible. -->
+  <section class="seccion">
+    <h2>❓ Preguntas frecuentes</h2>
+
+    <details class="pregunta">
+      <summary>¿Por qué elegiste este equipo?</summary>
+      <p>Porque demuestra que el fútbol es para todas y nos llena de orgullo. 💚</p>
+    </details>
+
+    <details class="pregunta">
+      <summary>¿Dónde puedo ver sus partidos?</summary>
+      <p>En la Liga MX Femenil y en los torneos de la Concacaf rumbo al Mundial. 📺</p>
+    </details>
+  </section>
+
+
+  <!-- ====================  PIE DE PÁGINA  ==================== -->
+  <footer class="pie-pagina">
+    Hecho con 💚 por mí · Taller de Programación
+  </footer>
+
+
+  <!-- 💡 ¿QUIERES PONER UNA FOTO DE VERDAD?
+       Cambia esta línea:    <div class="foto-perfil">⚽</div>
+       por esta otra:        <div class="foto-perfil"><img src="PEGA-AQUÍ-LA-DIRECCIÓN" alt="Foto"></div>
+       Lo mismo funciona para las imágenes de la galería. -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

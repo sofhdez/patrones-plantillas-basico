@@ -1,0 +1,438 @@
+/* ===========================================================
+   ESTILOS DE MI FAN-PAGE  ·  VERSIÓN PARA LLENAR
+   Los estilos ya están hechos para que tu página se vea bien.
+   Tu misión: cambiar los COLORES y experimentar.
+   Busca los  ✏️  para saber qué tocar.
+   =========================================================== */
+
+/* ✏️ Cámbiame: estos son los colores de tu página.
+   Cambia el de --color y toda la página cambia de tono.
+   Prueba otros:  #E0568A (rosa) · #7048E8 (morado)
+                  #1098AD (azul) · #F76707 (naranja) · #0E7C6B (verde) */
+:root {
+  --color: #7048E8;
+  --fondo: #FAFAF8;
+  --texto: #2B2B2B;
+  --tarjeta: #FFFFFF;
+  --suave: #F3F4F1;
+  --gris: #6A6E78;
+}
+
+/* MODO OSCURO: estos colores se usan cuando el JS le pone
+   la clase "oscuro" al body. (Lo activamos en la clase de JS) */
+body.oscuro {
+  --fondo: #1A1A22;
+  --texto: #F2F2F2;
+  --tarjeta: #26262F;
+  --suave: #32323D;
+  --gris: #A5A5B0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  margin: 0;
+  padding: 0 0 40px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* ====================  MENÚ DE NAVEGACIÓN  ==================== */
+.menu {
+  position: sticky;        /* se queda pegado arriba al hacer scroll */
+  top: 0;
+  z-index: 10;
+  background: var(--tarjeta);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--texto);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+}
+
+.menu a:hover {
+  background: var(--suave);
+}
+
+/* ====================  ENCABEZADO (HERO)  ==================== */
+.hero {
+  position: relative;
+  background: var(--color);
+  color: white;
+  text-align: center;
+  padding: 50px 20px 40px;
+  border-radius: 0 0 28px 28px;
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  /* 👉 TU TURNO: haz que la foto sea un círculo perfecto.
+     Pista: border-radius: 50%;  (escríbelo en la línea de abajo) */
+
+  background: white;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  overflow: hidden;           /* recorta la imagen a la forma del círculo */
+  border: 5px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Si dentro de .foto-perfil hay una <img>, que llene el círculo sin deformarse. */
+.foto-perfil img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero h1 {
+  margin: 0 0 4px;
+  font-size: 30px;
+}
+
+.subtitulo {
+  margin: 0 0 16px;
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+.descripcion {
+  max-width: 460px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.etiqueta {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 14px;
+  /* 👉 TU TURNO: haz que las etiquetas tengan forma de píldora (bordes
+     muy redondos). Pista: border-radius: 999px; */
+
+  font-size: 14px;
+}
+
+.boton-like {
+  background: white;
+  color: var(--color);
+  border: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.boton-like:hover {
+  transform: scale(1.05);
+}
+
+.boton-tema {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.25);
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ====================  SECCIONES  ==================== */
+.seccion {
+  max-width: 720px;
+  margin: 36px auto 0;
+  padding: 0 20px;
+  scroll-margin-top: 70px;   /* para que el menú no tape el título */
+}
+
+.seccion h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+/* ====================  FICHA TÉCNICA (tabla)  ==================== */
+.ficha {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--tarjeta);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.ficha th,
+.ficha td {
+  text-align: left;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--suave);
+}
+
+.ficha th {
+  background: var(--suave);
+  width: 40%;
+  font-size: 14px;
+}
+
+.ficha tr:last-child th,
+.ficha tr:last-child td {
+  border-bottom: none;
+}
+
+/* ====================  TOP 5 (lista numerada)  ==================== */
+.top {
+  background: var(--tarjeta);
+  border-radius: 16px;
+  padding: 18px 18px 18px 44px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  line-height: 2;
+}
+
+/* ====================  GALERÍA  ==================== */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.tarjeta {
+  background: var(--tarjeta);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.15s ease;
+  margin: 0;
+}
+
+/* 👉 TU TURNO: haz que la tarjeta se levante un poco al pasar el mouse.
+   Pista: transform: translateY(-4px);  (prueba luego con -10px) */
+.tarjeta:hover {
+
+}
+
+.imagen {
+  height: 130px;
+  background: var(--suave);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 56px;
+  overflow: hidden;
+}
+
+/* Si dentro de .imagen hay una <img> de verdad, que llene el recuadro
+   sin deformarse (object-fit: cover recorta lo que sobra). */
+.imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pie {
+  margin: 0;
+  padding: 12px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* ====================  MULTIMEDIA (embeds)  ==================== */
+.sub-multimedia {
+  font-size: 17px;
+  margin: 22px 0 10px;
+}
+
+/* Reproductor de Spotify */
+.spotify {
+  width: 100%;
+  height: 152px;            /* alto típico del reproductor compacto */
+  border: 0;
+  border-radius: 16px;
+}
+
+/* Notita gris debajo de cada embed */
+.nota-embed {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: var(--gris);
+}
+
+.nota-embed code {
+  background: var(--suave);
+  border-radius: 6px;
+  padding: 1px 6px;
+  font-size: 13px;
+}
+
+/* ====================  FRASE FAVORITA  ==================== */
+.frase {
+  background: var(--tarjeta);
+  border-left: 5px solid var(--color);
+  border-radius: 0 16px 16px 0;
+  margin: 0;
+  padding: 22px;
+  font-size: 19px;
+  font-style: italic;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.frase cite {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--color);
+}
+
+/* ============  CAJA DEL DATO CURIOSO (JavaScript)  ============ */
+.caja-dato {
+  background: var(--tarjeta);
+  border: 2px dashed var(--color);
+  border-radius: 16px;
+  padding: 28px 20px;
+  text-align: center;
+  min-height: 40px;
+}
+
+#dato {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.boton-dato {
+  display: block;
+  margin: 16px auto 0;
+  background: var(--color);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.boton-dato:hover {
+  transform: scale(1.05);
+}
+
+/* ============  BOTONES DE COLOR  ============ */
+.colores {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.color-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.color-btn:hover {
+  transform: scale(1.15);
+}
+
+/* ============  FORMULARIO DE COMENTARIOS  ============ */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form input,
+.form textarea {
+  font-family: inherit;
+  font-size: 15px;
+  padding: 12px;
+  border: 2px solid var(--suave);
+  border-radius: 12px;
+  background: var(--tarjeta);
+  color: var(--texto);
+}
+
+.form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--color);
+}
+
+.lista-comentarios {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comentario {
+  background: var(--tarjeta);
+  border-radius: 12px;
+  padding: 14px 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.comentario strong {
+  color: var(--color);
+}
+
+/* ============  PREGUNTAS (details)  ============ */
+.pregunta {
+  background: var(--tarjeta);
+  border-radius: 12px;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.pregunta summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.pregunta p {
+  margin: 12px 0 0;
+  color: var(--gris);
+}
+
+/* ====================  PIE DE PÁGINA  ==================== */
+.pie-pagina {
+  text-align: center;
+  margin-top: 40px;
+  color: var(--gris);
+  font-size: 14px;
+}
