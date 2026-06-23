@@ -21,6 +21,11 @@ files-template/
 ├── plantilla-base/         ⭐ EL PROYECTO PRINCIPAL: "Mi Fan-Page"
 │   ├── ejemplo/            Versión completa y funcionando (para proyectar).
 │   └── para-llenar/        Versión con huecos ✏️ para que la armen ellas.
+│
+└── ejemplos/               Mini-proyectos de referencia / inspiración.
+    ├── 1_biolink/          Tarjeta de enlaces (HTML + CSS)
+    ├── 2_generador/        Botón con mensajes al azar (JavaScript)
+    └── 3_galeria/          Álbum de fotos (HTML + CSS)
 ```
 
 Para abrir cualquier página: doble clic en su `index.html` (se abre en el
@@ -54,6 +59,8 @@ La versión `para-llenar` es un **andamio**, no está resuelta:
   - `<blockquote>` / `<cite>` — la frase favorita
   - `<form>`, `<input>`, `<textarea>`, `<button>` — los comentarios
   - `<details>` / `<summary>` — preguntas que se abren y cierran (¡sin JS!)
+  - `<iframe>` — la sección **Multimedia**: incrusta (embebe) una playlist
+    de Spotify (ya está armada como modelo; solo se cambia por la propia).
 - Concepto clave: las **etiquetas** son las piezas con las que se arma una página,
   y cada una tiene su trabajo.
 
@@ -111,6 +118,30 @@ paso a paso en un comentario `💡` dentro de `para-llenar/index.html`):
 
 > 💡 Buen momento para hablar del `alt`: el texto que describe la imagen
 > para quien no puede verla.
+
+---
+
+## 🎧 Tip: agregar videos y música (embeds gratis)
+
+La sección **Multimedia** usa la etiqueta `<iframe>` para incrustar contenido
+de otros sitios. **Spotify, Google Maps, etc. son gratis**: te regalan el
+código en **"Compartir → Insertar"**.
+
+```html
+<!-- Playlist de Spotify -->
+<iframe class="spotify" src="https://open.spotify.com/embed/playlist/EL-ID"></iframe>
+```
+
+Solo se copia la dirección que va después de `src="..."`. En el ejemplo la
+playlist de Spotify ya está armada como modelo; basta cambiarla por la propia.
+
+> ⚠️ A diferencia de los emojis y de las fotos descargadas, **los embeds
+> necesitan internet** para verse, y el enlace debe ser el de *"insertar"*
+> (`/embed/...`), no el de la barra del navegador.
+
+> 💡 Usamos **Spotify** y no YouTube a propósito: muchos videos de YouTube
+> (sobre todo de deportes) **bloquean el embed** y muestran un "Error 153".
+> Si quieres incrustar un video, elige uno que permita insertarse.
 
 ---
 
