@@ -155,6 +155,22 @@ Aquí `href` es el atributo que dice a dónde lleva el enlace. Los que usaremos:
 </figure>
 ```
 
+**Multimedia / embeds** (incrustar contenido de otro sitio)
+```html
+<!-- "una página dentro de otra": una playlist de Spotify -->
+<iframe class="spotify" src="https://open.spotify.com/embed/playlist/EL-ID"></iframe>
+```
+> 💡 Es **gratis**: en Spotify se copia el código de **"Compartir → Insertar
+> elemento"** y solo se pega la dirección que va después de `src="..."`.
+> Ojo: a diferencia de los emojis, **los embeds necesitan internet** y el
+> enlace debe ser el de *insertar* (`/embed/...`), no el de la barra de
+> direcciones. En la sección **Multimedia** la playlist de Spotify ya está
+> armada como modelo; las alumnas solo la cambian por la suya.
+>
+> ⚠️ Usamos Spotify y **no** YouTube a propósito: muchos videos (sobre todo
+> deportivos) bloquean el embed y muestran un **"Error 153"**. Si alguien
+> quiere un video, debe elegir uno que permita insertarse.
+
 **Comentarios** (notas que no se ven en la página)
 ```html
 <!-- Esto es un comentario, el navegador lo ignora -->
@@ -183,12 +199,16 @@ En `plantilla-base/para-llenar/index.html`:
 - Cambian los textos marcados con `✏️` (nombre, descripción, etiquetas...).
 - Resuelven los `👉 TU TURNO`: copian el bloque modelo para crear las demás
   filas de la tabla, los `<li>` del Top 5, las tarjetas de la galería, etc.
+- En **Multimedia**, cambian el `src` de la playlist de Spotify (que ya está
+  armada como modelo) por el de su propia playlist o podcast.
 
 ## ⚠️ Errores típicos del día 1
 - **Olvidar cerrar** una etiqueta (`<p>` sin `</p>`) → el resto se ve raro.
 - **Comillas sin cerrar** en un atributo (`href="...` sin la otra comilla).
 - Escribir el cierre **sin la diagonal** (`<p>` en vez de `</p>`).
 - Acentos raros → casi siempre falta `<meta charset="UTF-8">`.
+- Embed que no carga → pegaron el enlace de la barra del navegador en vez del
+  de **"Insertar"** (`/embed/...`), o no hay internet.
 
 ---
 ---
@@ -584,6 +604,7 @@ Cambiar el emoji por una imagen:
 | Una imagen | HTML | `<img src="foto.jpg" alt="...">` |
 | Un enlace | HTML | `<a href="...">Texto</a>` |
 | Una lista | HTML | `<ul><li>...</li></ul>` |
+| Incrustar una playlist | HTML | `<iframe src="...spotify/embed..."></iframe>` |
 | Cambiar color de texto | CSS | `color: #E0568A;` |
 | Color de fondo | CSS | `background: #FAFAF8;` |
 | Esquinas redondas | CSS | `border-radius: 16px;` |
