@@ -21,11 +21,6 @@ files-template/
 ├── plantilla-base/         ⭐ EL PROYECTO PRINCIPAL: "Mi Fan-Page"
 │   ├── ejemplo/            Versión completa y funcionando (para proyectar).
 │   └── para-llenar/        Versión con huecos ✏️ para que la armen ellas.
-│
-└── ejemplos/               Mini-proyectos de referencia / inspiración.
-    ├── 1_biolink/          Tarjeta de enlaces (HTML + CSS)
-    ├── 2_generador/        Botón con mensajes al azar (JavaScript)
-    └── 3_galeria/          Álbum de fotos (HTML + CSS)
 ```
 
 Para abrir cualquier página: doble clic en su `index.html` (se abre en el
@@ -88,10 +83,6 @@ La versión `para-llenar` es un **andamio**, no está resuelta:
   cambiar texto/estilos, leer un formulario y crear elementos nuevos.
 - La solución de los 5 está en `ejemplo/script.js`.
 - Concepto clave: el JavaScript hace que la página **reaccione**.
-
-> 💡 Los tres mini-proyectos de `ejemplos/` sirven como apoyo: si quieres
-> reforzar solo JS, abre el generador; si quieres practicar galerías, abre
-> la galería, etc.
 
 ---
 
