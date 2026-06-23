@@ -320,7 +320,7 @@ h1     { color: var(--color); }   /* lo usamos con var() */
 button { background: var(--color); }
 ```
 
-## 8. Acomodar cosas (layout): Flexbox y Grid
+## 8. Acomodar cosas (layout): Flexbox y Grid OPCIONAL
 
 **Flexbox** = poner elementos en **fila** y repartirlos:
 ```css
