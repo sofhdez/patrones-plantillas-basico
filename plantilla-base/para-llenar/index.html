@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ✏️ Cámbiame: el título que aparece en la pestaña del navegador -->
+  <title>Mi Fan-Page</title>
+
+  <!-- ===========================================================
+       MI FAN-PAGE  ·  VERSIÓN PARA LLENAR
+       Esta página es sobre ALGO QUE TE GUSTA: una artista, una
+       película, tu equipo, tu mascota, un videojuego... ¡tú eliges!
+
+       CÓMO FUNCIONA ESTA PLANTILLA:
+       · Donde veas  ✏️  : escribe TU contenido.
+       · Donde veas  👉 TU TURNO : ahí tienes que escribir las
+         etiquetas tú misma, copiando el ejemplo de arriba.
+       · ¿Te atoras? Abre la carpeta "ejemplo" para ver cómo queda.
+       =========================================================== -->
+
+</head>
+
+<body>
+
+  <!-- ====================  MENÚ DE NAVEGACIÓN  ====================
+       <nav> es un menú. Cada enlace salta a una sección de la página
+       usando #  (el id de la sección a la que queremos ir). -->
+  <nav class="menu">
+    <a href="#inicio">Inicio</a>
+    <a href="#ficha">Ficha</a>
+    <a href="#top">Top 5</a>
+    <a href="#galeria">Galería</a>
+    <a href="#comentarios">Comentarios</a>
+  </nav>
+
+
+  <!-- ====================  ENCABEZADO (HERO)  ==================== -->
+  <header class="hero" id="inicio">
+
+    <!-- Botón de modo oscuro (lo harás funcionar en la clase de JS) -->
+    <button id="boton-tema" class="boton-tema">🌙</button>
+
+    <!-- ✏️ Cámbiame: pon el emoji que represente tu tema -->
+    <div class="foto-perfil">⭐</div>
+
+    <!-- ✏️ Cámbiame: el nombre de lo que te gusta -->
+    <h1>Escribe aquí el nombre</h1>
+
+    <!-- ✏️ Cámbiame: una línea corta (¿qué es? ¿de dónde es?) -->
+    <p class="subtitulo">Una descripción corta</p>
+
+    <!-- ✏️ Cámbiame: dos o tres frases contando por qué te gusta -->
+    <p class="descripcion">
+      Escribe aquí por qué te gusta. ¿Qué te hace sentir? ¿Por qué
+      lo elegiste para tu página?
+    </p>
+
+    <!-- Aquí van 4 etiquetas. La primera ya está hecha como ejemplo. -->
+    <div class="etiquetas">
+      <span class="etiqueta">⭐ Etiqueta 1</span>
+
+      <!-- 👉 TU TURNO: copia la línea <span class="etiqueta">...</span>
+           de arriba 3 veces más, aquí debajo, y cámbiales el texto. -->
+
+    </div>
+
+    <!-- Botón de "me gusta" con contador (lo harás funcionar en JS) -->
+    <button id="boton-like" class="boton-like">💖 Me gusta · <span id="likes">0</span></button>
+
+  </header>
+
+
+  <!-- ====================  SECCIÓN: FICHA TÉCNICA  ====================
+       Una <table> (tabla) muestra datos en filas y columnas.
+       Cada <tr> es una fila. <th> es el título y <td> el dato. -->
+  <section class="seccion" id="ficha">
+    <h2>📋 Ficha técnica</h2>
+
+    <table class="ficha">
+      <!-- Esta primera fila ya está hecha como ejemplo: -->
+      <tr>
+        <th>Nombre completo</th>
+        <td>Escribe el dato aquí</td>
+      </tr>
+
+      <!-- 👉 TU TURNO: copia el bloque <tr> ... </tr> de arriba
+           3 veces más para tener 4 filas. Cambia el título (<th>)
+           y el dato (<td>) de cada una. -->
+
+    </table>
+  </section>
+
+
+  <!-- ====================  SECCIÓN: TOP 5  ====================
+       <ol> es una lista NUMERADA. Cada <li> es un elemento. -->
+  <section class="seccion" id="top">
+    <h2>🏆 Mi Top 5</h2>
+
+    <ol class="top">
+      <!-- El primero ya está. Faltan 4. -->
+      <li>Favorito número 1</li>
+
+      <!-- 👉 TU TURNO: escribe 4 líneas más como la de arriba,
+           cada una entre <li> y </li>. -->
+
+    </ol>
+  </section>
+
+
+  <!-- ====================  SECCIÓN: GALERÍA  ====================
+       <figure> agrupa una imagen con su texto <figcaption>. -->
+  <section class="seccion" id="galeria">
+    <h2>📸 Galería</h2>
+
+    <!-- 💡 ¿QUIERES USAR FOTOS DE VERDAD EN VEZ DE EMOJIS?
+         Hay DOS formas. En las dos cambias esta línea:
+             <div class="imagen">🖼️</div>
+         por una imagen, así:
+             <div class="imagen"><img src="AQUÍ-VA-LA-DIRECCIÓN" alt="Una foto"></div>
+
+         👉 FORMA 1 · Copiar el enlace de una imagen de internet
+            1. Busca la imagen en internet y ábrela.
+            2. Clic derecho sobre la imagen → "Copiar dirección de la imagen".
+            3. Pega esa dirección dentro de las comillas del src.
+            (Ojo: necesita internet y a veces el enlace deja de funcionar.)
+
+         👉 FORMA 2 · Descargar la imagen a tu carpeta (la más segura)
+            1. Clic derecho sobre la imagen → "Guardar imagen como...".
+            2. Guárdala dentro de una carpeta llamada "imagenes",
+               junto a este archivo. Por ejemplo: imagenes/foto1.jpg
+            3. Usa esa ruta en el src:  src="imagenes/foto1.jpg"
+            (Esta funciona aunque no haya internet. ¡Es la recomendada!)
+
+         No olvides cambiar el texto del alt por lo que muestra tu foto. -->
+
+    <div class="galeria">
+
+      <!-- Esta primera tarjeta ya está hecha como ejemplo: -->
+      <figure class="tarjeta">
+        <div class="imagen">🖼️</div>
+        <figcaption class="pie">Escribe un pie de foto</figcaption>
+      </figure>
+
+      <!-- 👉 TU TURNO: copia el bloque <figure> ... </figure> de arriba
+           para tener al menos 4 tarjetas. Cambia el emoji (o pon una foto,
+           mira la pista 💡 de arriba) y el texto. -->
+
+    </div>
+  </section>
+
+
+  <!-- ====================  SECCIÓN: FRASE FAVORITA  ====================
+       <blockquote> es una cita: un texto destacado de alguien. -->
+  <section class="seccion">
+    <h2>💬 Una frase favorita</h2>
+
+    <!-- ✏️ Cámbiame: pon una frase que te guste y de quién es. -->
+    <blockquote class="frase">
+      "Escribe aquí tu frase favorita."
+      <cite>— ¿De quién es?</cite>
+    </blockquote>
+  </section>
+
+
+  <!-- ============  SECCIÓN: DATO CURIOSO (con JavaScript)  ============ -->
+  <section class="seccion">
+    <h2>✨ ¿Sabías que...?</h2>
+
+    <div class="caja-dato">
+      <p id="dato">Aprieta el botón para descubrir un dato curioso 👇</p>
+    </div>
+
+    <button id="boton-dato" class="boton-dato">Dame un dato 🎲</button>
+  </section>
+
+
+  <!-- ============  SECCIÓN: CAMBIA EL COLOR (con JavaScript)  ============
+       Cada botón cambiará el color principal de toda la página. -->
+  <section class="seccion">
+    <h2>🎨 Cambia el color del tema</h2>
+
+    <div class="colores">
+      <button class="color-btn" style="background:#E0568A" data-color="#E0568A"></button>
+      <button class="color-btn" style="background:#7048E8" data-color="#7048E8"></button>
+      <button class="color-btn" style="background:#1098AD" data-color="#1098AD"></button>
+      <button class="color-btn" style="background:#F76707" data-color="#F76707"></button>
+      <button class="color-btn" style="background:#0E7C6B" data-color="#0E7C6B"></button>
+    </div>
+  </section>
+
+
+  <!-- ============  SECCIÓN: COMENTARIOS (con JavaScript)  ============
+       <form> es un formulario: junta campos para que la gente escriba.
+       <input> es una línea de texto y <textarea> un recuadro grande. -->
+  <section class="seccion" id="comentarios">
+    <h2>📝 Deja un comentario</h2>
+
+    <form id="form-comentario" class="form">
+      <input id="nombre" type="text" placeholder="Tu nombre" required>
+      <textarea id="mensaje" placeholder="Escribe tu comentario..." required></textarea>
+      <button type="submit" class="boton-dato">Publicar comentario 💬</button>
+    </form>
+
+    <!-- Aquí el JavaScript irá agregando los comentarios -->
+    <div id="lista-comentarios" class="lista-comentarios"></div>
+  </section>
+
+
+  <!-- ====================  SECCIÓN: PREGUNTAS  ====================
+       <details> se abre y se cierra al hacer clic. ¡Sin JavaScript!
+       El <summary> es la pregunta visible. -->
+  <section class="seccion">
+    <h2>❓ Preguntas frecuentes</h2>
+
+    <!-- La primera pregunta ya está hecha como ejemplo: -->
+    <details class="pregunta">
+      <summary>¿Por qué elegiste este tema?</summary>
+      <p>Escribe aquí tu respuesta.</p>
+    </details>
+
+    <!-- 👉 TU TURNO: copia el bloque <details> ... </details> de arriba
+         y escribe otra pregunta con su respuesta. -->
+
+  </section>
+
+
+  <!-- ====================  PIE DE PÁGINA  ==================== -->
+  <footer class="pie-pagina">
+    <!-- ✏️ Cámbiame: firma tu página -->
+    Hecho con 💛 por mí · Taller de Programación
+  </footer>
+
+
+  <!-- 💡 ¿QUIERES PONER UNA FOTO DE VERDAD?
+       Cambia esta línea:    <div class="foto-perfil">⭐</div>
+       por esta otra:        <div class="foto-perfil"><img src="PEGA-AQUÍ-LA-DIRECCIÓN" alt="Foto"></div>
+       Lo mismo funciona para las imágenes de la galería. -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
